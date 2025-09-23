@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% block title %}Datos sociodemográficos{% endblock %}
+{% block content %}
+  <p>Antes de comenzar, cuéntanos un poco de ti.</p>
+
+  {# Puedes controlar el orden con formfield por campo #}
+  {{ formfield 'estrato' }}
+  {{ formfield 'edad' }}
+  {{ formfield 'sexo' }}
+
+  {{ next_button }}
+{% endblock %}
