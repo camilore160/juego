@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+
+{% block title %}
+Resultado — Ultimátum con información
+{% endblock %}
+
+{% block content %}
+
+<p>
+Dotación total: {{ endowment }}
+</p>
+
+<p>
+Oferta realizada: {{ offer }}
+</p>
+
+<p>
+Tu pago en este juego: {{ payoff }}
+</p>
+
+{% if accepted %}
+<p>
+La oferta fue aceptada.
+</p>
+{% else %}
+<p>
+La oferta fue rechazada.
+</p>
+{% endif %}
+
+{{ next_button }}
+
+{% endblock %}

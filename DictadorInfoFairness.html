@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+
+{% block title %}
+Opinión sobre el reparto (Dictador con información)
+{% endblock %}
+
+{% block content %}
+
+<p>
+Dotación total: {{ endowment }}
+</p>
+
+<p>
+El Jugador 1 te asignó: {{ oferta }}
+</p>
+
+<p>
+Tu pago en este juego: {{ payoff }}
+</p>
+
+<p>
+¿El reparto te pareció justo o injusto?
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{% endblock %}
+
+
+
+

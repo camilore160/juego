@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% block title %}Ultimátum (con información) — Receptor{% endblock %}
+
+{% block content %}
+
+<h4>Información del Jugador 1</h4>
+
+<ul>
+    <li>Edad: {{ p1_edad }}</li>
+    <li>Sexo: {{ p1_sexo }}</li>
+    <li>Condición laboral: {{ p1_condicion_laboral }}</li>
+</ul>
+
+<p>
+Oferta recibida: <b>{{ offer }}</b> de {{ endowment }}
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{% endblock %}
